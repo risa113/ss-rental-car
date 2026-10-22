@@ -1,0 +1,55 @@
+import type { ServiceItem } from '../types';
+
+export const RENTAL_SERVICES: ServiceItem[] = [
+  {
+    id: 'local-rentals',
+    title: 'Local City Rentals',
+    tagline: 'Effortless travel across Tirunelveli and surrounding townships.',
+    description: 'Ideal for city errands, business meetings, shopping visits, weddings, and local sightseeing across Tirunelveli, Palayamkottai, and nearby suburban areas.',
+    popularDestinations: ['Nellaiappar Temple', 'Palayamkottai', 'Vannarpettai', 'Tirunelveli Junction'],
+    iconName: 'MapPin',
+    badge: 'Popular',
+  },
+  {
+    id: 'outstation-journeys',
+    title: 'Outstation Journeys',
+    tagline: 'Reliable, comfortable road travel across South Tamil Nadu and Kerala.',
+    description: 'Plan scenic outstation trips with dependable vehicles. Perfect for weekend getaways, pilgrimage tours, and long-distance road trips starting from Tirunelveli.',
+    popularDestinations: ['Kanyakumari (85 km)', 'Courtallam Falls (55 km)', 'Madurai (160 km)', 'Rameswaram (225 km)', 'Trivandrum (145 km)'],
+    iconName: 'Compass',
+    badge: 'High Demand',
+  },
+  {
+    id: 'family-travel',
+    title: 'Family & Group Travel',
+    tagline: 'Spacious MPVs designed for family comfort and relaxed road trips.',
+    description: 'Travel together without splitting into multiple cabs. Our 7-seater Ertiga and Innova Crysta provide generous legroom, dual air conditioning, and plenty of luggage space.',
+    popularDestinations: ['Family Vacations', 'Temple Circuits', 'Family Functions', 'Hill Station Getaways'],
+    iconName: 'Users',
+  },
+  {
+    id: 'business-travel',
+    title: 'Business & Corporate Travel',
+    tagline: 'Punctual, clean, and professional car rental for corporate guests.',
+    description: 'Ensure smooth commutes for visiting executives, client site inspections, industrial visits around Gangaikondan SIPCOT, and business conferences in South TN.',
+    popularDestinations: ['SIPCOT Gangaikondan', 'District Collectorate', 'Nanguneri SEZ', 'Tuticorin Port Corridor'],
+    iconName: 'Briefcase',
+  },
+  {
+    id: 'airport-transfers',
+    title: 'Airport Transfers',
+    tagline: 'Prompt airport pick-up and drop transfers (subject to service confirmation).',
+    description: 'Enquire for timely transfers to and from nearby airports connecting Tirunelveli with domestic and international flights. Advance booking enquiry recommended.',
+    popularDestinations: ['Tuticorin Airport — TCR (40 km)', 'Madurai Airport — IXM (150 km)', 'Trivandrum Int’l — TRV (145 km)'],
+    iconName: 'PlaneTakeoff',
+    badge: 'Enquiry Subject to Confirmation',
+  },
+  {
+    id: 'custom-requirements',
+    title: 'Custom Travel Itineraries',
+    tagline: 'Tailored multi-day itineraries and flexible car rental packages.',
+    description: 'Have a specific travel schedule or multi-destination circuit? Share your route with us for a custom quotation and vehicle recommendation tailored to your needs.',
+    popularDestinations: ['South Tamil Nadu Circuit', 'Kerala Border Routes', 'Special Event Transport'],
+    iconName: 'CalendarCheck',
+  },
+];

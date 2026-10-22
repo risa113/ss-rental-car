@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #F7F5F0;
+    color: #252B33;
+    font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Headings typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Manrope', sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  /* Clean outline for keyboard accessibility */
+  :focus-visible {
+    outline: 2px solid #42C5D9;
+    outline-offset: 3px;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F5F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C8CED5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9EA7B3;
+}
+
+/* Custom editorial effects */
+.editorial-border {
+  border-color: rgba(200, 206, 213, 0.4);
+}
+
+.editorial-tag {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Subtle image zoom on card hover */
+.img-zoom {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .img-zoom {
+  transform: scale(1.04);
+}
+
+/* Safe area support for mobile floating bar */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 1rem);
+}
